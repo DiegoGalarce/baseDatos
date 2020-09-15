@@ -13,6 +13,11 @@ const productoSchema = new Schema({
     },
     categoria: {
         type: String,
-        required:True
+        required:true
     }
+},{
+    timestamps:true
 })
+
+const Producto = mongoose.model('producto', productoSchema);
+export default Producto;
